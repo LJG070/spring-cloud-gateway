@@ -2,6 +2,8 @@ server:
   port: 8000
 
 eureka:
+  instance:
+    instance-id: apigateway-service:13.124.201.208:8000
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -15,8 +17,8 @@ spring:
   rabbitmq:
     host: 3.34.225.117
     port: 5672
-    username: guest
-    password: guest
+    username: ecommerce_dev
+    password: 1234
 
   cloud:
     gateway:
